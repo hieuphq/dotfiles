@@ -1,4 +1,5 @@
 # Dotfiles
+[![Build Status](https://travis-ci.org/gnhuy91/dotfiles.svg?branch=master)](https://travis-ci.org/gnhuy91/dotfiles)
 
 My OSX / Ubuntu dotfiles.
 
