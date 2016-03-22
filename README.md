@@ -1,5 +1,6 @@
 # Dotfiles
 [![Build Status](https://travis-ci.org/gnhuy91/dotfiles.svg?branch=master)](https://travis-ci.org/gnhuy91/dotfiles)
+[![Code Climate](https://codeclimate.com/github/gnhuy91/dotfiles/badges/gpa.svg)](https://codeclimate.com/github/gnhuy91/dotfiles)
 
 My OSX / Ubuntu dotfiles.
 
