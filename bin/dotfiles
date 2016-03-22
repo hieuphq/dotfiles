@@ -23,6 +23,9 @@ exit; fi
 # Where the magic happens.
 export DOTFILES=~/.dotfiles
 
+# git repo
+GITREPO=git://github.com/${github_user:-gnhuy91}/dotfiles.git
+
 # Logging stuff.
 function e_header()   { echo -e "\n\033[1m$@\033[0m"; }
 function e_success()  { echo -e " \033[1;32m✔\033[0m  $@"; }
@@ -284,8 +287,8 @@ if [[ ! -d $DOTFILES ]]; then
   # $DOTFILES directory doesn't exist? Clone it!
   new_dotfiles_install=1
   prompt_delay=15
-  e_header "Downloading dotfiles"
-  git clone --recursive git://github.com/${github_user:-cowboy}/dotfiles.git $DOTFILES
+  e_header "Downloading dotfiles to $DOTFILES"
+  git clone --recursive $GITREPO $DOTFILES
   cd $DOTFILES
 elif [[ "$1" != "restart" ]]; then
   # Make sure we have the latest files.
