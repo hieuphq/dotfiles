@@ -47,6 +47,7 @@ packages=(
   id3tool
   libssl-dev
   mercurial
+  ncdu
   nmap
   silversearcher-ag
   sl
