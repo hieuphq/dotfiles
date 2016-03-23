@@ -45,10 +45,12 @@ packages=(
   git-core
   htop
   id3tool
+  libpq-dev
   libssl-dev
   mercurial
   ncdu
   nmap
+  python-dev
   silversearcher-ag
   sl
   telnet
