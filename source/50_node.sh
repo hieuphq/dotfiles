@@ -117,3 +117,6 @@ function npm_latest() {
     echo -e '\nAll dependencies are @latest version.'
   fi
 }
+
+# node version manager
+export NVM_DIR="$HOME/.nvm"

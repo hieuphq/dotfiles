@@ -2,6 +2,3 @@ language: bash
 script:
   - ./test/test_path_remove.sh
   - ./test/test_setdiff.sh
-addons:
-  code_climate:
-    repo_token: cfd30430f5516ad7cca777eabb160e957642b2e8f59e8b8a41fb6fa6c8b592df
