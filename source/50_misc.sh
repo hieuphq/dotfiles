@@ -33,6 +33,3 @@ fi
 
 # Disable ansible cows }:]
 export ANSIBLE_NOCOWS=1
-
-# Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
