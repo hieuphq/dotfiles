@@ -1,5 +1,5 @@
 # Define Golang version
-VERSION="1.5.3"
+VERSION="1.6.2"
 ARCH="amd64"
 is_ubuntu && OS="linux"
 is_osx && OS="darwin"
