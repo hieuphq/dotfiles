@@ -33,3 +33,7 @@ fi
 
 # Disable ansible cows }:]
 export ANSIBLE_NOCOWS=1
+
+# change default Alt+Click (which move windows) to Super+Click for VsCode
+# multiple cursor selection
+gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier "<Super>"
