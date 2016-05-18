@@ -119,4 +119,4 @@ function npm_latest() {
 }
 
 # node version manager
-export NVM_DIR="$HOME/.nvm"
+# export NVM_DIR="$HOME/.nvm"
