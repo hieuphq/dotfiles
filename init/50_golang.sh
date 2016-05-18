@@ -11,3 +11,6 @@ unset -v GO_VERSION OS ARCH
 
 # loads Golang environment
 source $DOTFILES/source/50_golang.sh
+
+# install Golang packages
+go get golang.org/x/tools/cmd/goimports
