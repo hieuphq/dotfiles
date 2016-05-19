@@ -6,7 +6,7 @@ is_osx && OS="darwin"
 
 # Download Golang
 echo "Download Golang $GO_VERSION.$OS-$ARCH"
-curl -s https://storage.googleapis.com/golang/go$GO_VERSION.$OS-$ARCH.tar.gz | tar -C /usr/local -xz
+sudo bash -c "curl -s https://storage.googleapis.com/golang/go$GO_VERSION.$OS-$ARCH.tar.gz | tar -C /usr/local -xz"
 unset -v GO_VERSION OS ARCH
 
 # loads Golang environment
