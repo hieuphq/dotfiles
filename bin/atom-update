@@ -3,6 +3,9 @@
 # wget -q $(awk -F '[<>]' '/href=".*atom-amd64.deb/ {match($0,"href=\"(.*.deb)\"",a); print "https://github.com/" a[1]} ' /tmp/latest) -O /tmp/atom-amd64.deb
 # dpkg -i /tmp/atom-amd64.deb
 
+# Use this with cron:
+# 0 6 * * * /usr/local/bin/atom-update > /var/log/cron.log 2>&1
+
 TMP_DIR=$(mktemp -d)
 
 TMP_LATEST="${TMP_DIR}/latest"
