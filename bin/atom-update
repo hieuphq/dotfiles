@@ -17,13 +17,13 @@ VER_LATEST=$(echo $LATEST | rev | cut -d"/" -f 2 | rev | sed 's/v//g')
 
 VER_INST=$(dpkg -l atom | tail -n1 | tr -s ' ' | cut -d" " -f 3)
 
-echo "$(date)> current: $VER_INST | lastest: $VER_LATEST"
+echo "$(date)> [atom] - current: $VER_INST | lastest: $VER_LATEST"
 
 if [ "$VER_LATEST" != "$VER_INST" ]; then
   wget -q $LATEST -O $TMP_FILE
   VER_DOWN=$(dpkg-deb -f $TMP_FILE Version)
   if [ "$VER_DOWN" != "$VER_INST" ]; then
-    dpkg -i $TMP_FILE
+    sudo dpkg -i $TMP_FILE
   fi
 fi
 
