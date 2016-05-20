@@ -126,6 +126,8 @@ function prompt_command() {
   PS1="\n"
   # git: [branch:flags]
   PS1="$PS1$(prompt_git)"
+  # Only check for other VCS if previous VCS type check failed, ie.
+  # if current dir is 'git' then we skip checks for 'svn' and 'hg'
   if [[ $? == 1 ]]; then
     # svn: [repo:lastchanged]
     PS1="$PS1$(prompt_svn)"
