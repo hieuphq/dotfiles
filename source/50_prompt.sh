@@ -52,7 +52,7 @@ function prompt_git() {
   prompt_getcolors
   local status output flags branch
   status="$(git status 2>/dev/null)"
-  [[ $? != 0 ]] && return;
+  [[ $? != 0 ]] && return 1;
   output="$(echo "$status" | awk '/# Initial commit/ {print "(init)"}')"
   [[ "$output" ]] || output="$(echo "$status" | awk '/# On branch/ {print $4}')"
   [[ "$output" ]] || output="$(git branch | perl -ne '/^\* \(detached from (.*)\)$/ ? print "($1)" : /^\* (.*)/ && print $1')"
@@ -74,7 +74,7 @@ function prompt_hg() {
   prompt_getcolors
   local summary output bookmark flags
   summary="$(hg summary 2>/dev/null)"
-  [[ $? != 0 ]] && return;
+  [[ $? != 0 ]] && return 1;
   output="$(echo "$summary" | awk '/branch:/ {print $2}')"
   bookmark="$(echo "$summary" | awk '/bookmarks:/ {print $2}')"
   flags="$(
@@ -93,7 +93,9 @@ function prompt_hg() {
 # SVN info.
 function prompt_svn() {
   prompt_getcolors
-  local info="$(svn info . 2> /dev/null)"
+  local info
+  info="$(svn info . 2> /dev/null)"
+  [[ $? != 0 ]] && return 1;
   local last current
   if [[ "$info" ]]; then
     last="$(echo "$info" | awk '/Last Changed Rev:/ {print $4}')"
@@ -122,12 +124,16 @@ function prompt_command() {
   prompt_getcolors
   # http://twitter.com/cowboy/status/150254030654939137
   PS1="\n"
-  # svn: [repo:lastchanged]
-  PS1="$PS1$(prompt_svn)"
   # git: [branch:flags]
   PS1="$PS1$(prompt_git)"
-  # hg:  [branch:flags]
-  PS1="$PS1$(prompt_hg)"
+  if [[ $? == 1 ]]; then
+    # svn: [repo:lastchanged]
+    PS1="$PS1$(prompt_svn)"
+  fi
+  if [[ $? == 1 ]]; then
+    # hg:  [branch:flags]
+    PS1="$PS1$(prompt_hg)"
+  fi
   # misc: [cmd#:hist#]
   # PS1="$PS1$c1[$c0#\#$c1:$c0!\!$c1]$c9"
   # path: [user@host:path]
