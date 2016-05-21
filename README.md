@@ -113,7 +113,7 @@ There's a lot of stuff that requires admin access via `sudo`, so be warned that 
 ### Actual installation (for me)
 
 ```sh
-bash -c "$(curl -fsSL https://bit.ly/cowboy-dotfiles)" && source ~/.bashrc
+bash <(curl -fsSL https://raw.github.com/gnhuy91/dotfiles/master/bin/dotfiles) -y && source ~/.bashrc
 ```
 
 ## Aliases and Functions
