@@ -21,7 +21,7 @@ This will be skipped if "Y" isn't pressed within the next $prompt_delay seconds.
 EOF
   # if FLAG_YES is true then dont ask for [y/N] and update sudoers
   if [[ "$FLAG_YES" == true ]]; then
-    echo "You set a flag to update sudoers without asking."
+    echo -e "\n> You set a flag to update sudoers file without asking."
     update_sudoers="y"
   else
     read -N 1 -t $prompt_delay -p "Update sudoers file? [y/N] " update_sudoers; echo
