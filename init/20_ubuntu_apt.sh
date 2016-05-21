@@ -19,7 +19,13 @@ THIS SHOULD ONLY BE ATTEMPTED IF YOU ARE LOGGED IN AS ROOT IN ANOTHER SHELL.
 
 This will be skipped if "Y" isn't pressed within the next $prompt_delay seconds.
 EOF
-  read -N 1 -t $prompt_delay -p "Update sudoers file? [y/N] " update_sudoers; echo
+  # if FLAG_YES is true then dont ask for [y/N] and update sudoers
+  if [[ "$FLAG_YES" == true ]]; then
+    echo -e "\n> You set a flag to update sudoers file without asking."
+    update_sudoers="y"
+  else
+    read -N 1 -t $prompt_delay -p "Update sudoers file? [y/N] " update_sudoers; echo
+  fi
   if [[ "$update_sudoers" =~ [Yy] ]]; then
     e_header "Updating sudoers"
     visudo -cf "$sudoers_src" &&
