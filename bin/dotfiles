@@ -16,6 +16,9 @@ http://benalman.com/about/license/
 HELP
 exit; fi
 
+# experiment flag for force update sudoers
+[[ "$1" == "-y" ]] && export FLAG_YES=true
+
 ###########################################
 # GENERAL PURPOSE EXPORTED VARS / FUNCTIONS
 ###########################################
