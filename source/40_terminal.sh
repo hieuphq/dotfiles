@@ -51,6 +51,7 @@ gconftool-2 --set "/apps/gnome-terminal/profiles/Default/font" --type=string "Ub
 gconftool-2 --set "/apps/gnome-terminal/profiles/Default/allow_bold" --type=bool "true"
 gconftool-2 --set "/apps/gnome-terminal/profiles/Default/cursor_shape" --type=string "block"
 # Colors
+gconftool-2 --set "/apps/gnome-terminal/profiles/Default/use_theme_colors" --type=bool "false"
 gconftool-2 --set "/apps/gnome-terminal/profiles/Default/foreground_color" --type=string "#970997099709"
 gconftool-2 --set "/apps/gnome-terminal/profiles/Default/background_color" --type=string "#30300A0A2424"
 # Scrolling
