@@ -148,4 +148,10 @@ function prompt_command() {
   PS1="$PS1 \$ "
 }
 
-PROMPT_COMMAND="prompt_command"
+# Update terminal title
+function title_current_dir() {
+  # titlebar() from source/50_misc.sh
+  titlebar "${USER}@${HOSTNAME}: ${PWD/$HOME/~}"
+}
+
+PROMPT_COMMAND="title_current_dir; prompt_command"
