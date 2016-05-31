@@ -154,4 +154,4 @@ function title_current_dir() {
   titlebar "${USER}@${HOSTNAME}: ${PWD/$HOME/~}"
 }
 
-PROMPT_COMMAND="title_current_dir; prompt_command"
+PROMPT_COMMAND="prompt_command; title_current_dir"
