@@ -3,9 +3,12 @@
 # Ubuntu-only stuff. Abort if not Ubuntu.
 is_ubuntu || return 1
 
+# TODO: move this cronjob to root, as normal user need to `sudo` for `dpkg -i`,
+# and that does not work with non-interactive like cron.
+
 # declare an array of cronjobs
 declare -a arr=(
-  "0 6 * * * /usr/local/bin/atom-update > /var/log/cron.log 2>&1"
+  "0 9 * * * atom-update > /tmp/atom-update-cron.log 2>&1"
 )
 
 # now loop through the above array
