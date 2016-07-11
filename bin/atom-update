@@ -4,23 +4,20 @@
 # dpkg -i /tmp/atom-amd64.deb
 
 # Use this with cron:
-# 0 6 * * * /usr/local/bin/atom-update > /var/log/cron.log 2>&1
+# 0 9 * * * atom-update > /tmp/atom-update-cron.log 2>&1
 
 TMP_DIR=$(mktemp -d)
-
-TMP_LATEST="${TMP_DIR}/latest"
 TMP_FILE="${TMP_DIR}/atom-amd64.deb"
 
-wget -q https://github.com/atom/atom/releases/latest -O ${TMP_LATEST}
-LATEST=$(awk -F '[<>]' '/href=".*atom-amd64.deb/ {match($0,"href=\"(.*.deb)\"",a); print "https://github.com/" a[1]} ' ${TMP_LATEST})
-VER_LATEST=$(echo $LATEST | rev | cut -d"/" -f 2 | rev | sed 's/v//g')
+VER_LATEST=$(curl -sL https://api.github.com/repos/atom/atom/releases/latest | grep tag_name | cut -d '"' -f 4)
+LATEST_URL="https://github.com/atom/atom/releases/download/${VER_LATEST}/atom-amd64.deb"
 
 VER_INST=$(dpkg -l atom | tail -n1 | tr -s ' ' | cut -d" " -f 3)
 
 echo "$(date)> [atom] - current: $VER_INST | lastest: $VER_LATEST"
 
 if [ "$VER_LATEST" != "$VER_INST" ]; then
-  wget -q $LATEST -O $TMP_FILE
+  wget -q $LATEST_URL -O $TMP_FILE
   VER_DOWN=$(dpkg-deb -f $TMP_FILE Version)
   if [ "$VER_DOWN" != "$VER_INST" ]; then
     sudo dpkg -i $TMP_FILE
