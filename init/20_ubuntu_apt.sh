@@ -48,6 +48,7 @@ packages=(
   ansible
   build-essential
   cowsay
+  dh-autoreconf
   git-core
   htop
   id3tool
