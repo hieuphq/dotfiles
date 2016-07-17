@@ -5,7 +5,9 @@ shopt -s nocaseglob
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-export GREP_OPTIONS='--color=auto'
+# GREP_OPTIONS is deprecated, see:
+# http://askubuntu.com/questions/2186/replace-grep-command-with-grep-n-colour/2189#2189
+alias grep='grep --color=auto'
 
 # Prevent less from clearing the screen while still showing colors.
 export LESS=-XR
