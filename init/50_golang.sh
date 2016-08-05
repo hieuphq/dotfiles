@@ -4,8 +4,8 @@ ARCH="amd64"
 is_ubuntu && OS="linux"
 is_osx && OS="darwin"
 
-# echo "Clean up previously installed Go version"
-# sudo rm -rf /usr/local/go/*
+echo "Clean up previously installed Go version"
+sudo rm -rf /usr/local/go/*
 
 GO_URL="https://storage.googleapis.com/golang/go$GO_VERSION.$OS-$ARCH.tar.gz"
 
