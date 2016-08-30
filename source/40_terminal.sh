@@ -1,3 +1,6 @@
+# Ubuntu-only stuff. Abort if not Ubuntu.
+is_ubuntu || return 1
+
 # Terminal Profile preferences
 # http://askubuntu.com/questions/558280/changing-colour-of-text-and-background-of-terminal
 #
