@@ -1,5 +1,5 @@
 export GOROOT=/usr/local/go
-export GOPATH=$HOME/gopath
+export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 
 # Golang gvm
