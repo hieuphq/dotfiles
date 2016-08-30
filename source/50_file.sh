@@ -12,15 +12,10 @@ else
 fi
 
 # Directory listing
-if [[ "$(type -P tree)" ]]; then
-  alias ll='tree --dirsfirst -aLpughDFiC 1'
-  alias lsd='ll -d'
-else
-  alias ll='ls -alF'
-  alias la='ls -A'
-  alias l='ls -CF'
-  alias lsd='CLICOLOR_FORCE=1 ll | grep --color=never "^d"'
-fi
+alias ll='ls -alFh'
+alias la='ls -A'
+alias l='ls -CF'
+alias lsd='CLICOLOR_FORCE=1 ll | grep --color=never "^d"'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
