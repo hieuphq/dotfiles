@@ -1,9 +1,3 @@
-# bash completion compatibility mode for zsh
-if [[ $ZSH_NAME ]]; then
-  autoload bashcompinit
-  bashcompinit
-fi
-
 # Where the magic happens.
 export DOTFILES=~/.dotfiles
 
