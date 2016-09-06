@@ -9,7 +9,6 @@ recipes=(
   android-platform-tools
   ansible
   bash
-  cmatrix
   cowsay
   git
   git-extras
