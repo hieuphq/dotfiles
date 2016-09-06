@@ -10,6 +10,7 @@ recipes=(
   ansible
   bash
   cowsay
+  fish
   git
   git-extras
   htop-osx
