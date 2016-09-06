@@ -20,6 +20,7 @@ brew cask info this-is-somewhat-annoying 2>/dev/null
 casks=(
   # Applications
   a-better-finder-rename
+  atom
   charles
   dropbox
   # fastscripts
@@ -35,6 +36,7 @@ casks=(
   teamviewer
   vagrant
   virtualbox
+  visual-studio-code
   vlc
   # Quick Look plugins
   betterzipql
