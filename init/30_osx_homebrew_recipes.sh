@@ -13,6 +13,7 @@ recipes=(
   fish
   git
   git-extras
+  go
   htop-osx
   hub
   id3tool
