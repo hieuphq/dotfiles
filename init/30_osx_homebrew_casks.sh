@@ -6,7 +6,7 @@ is_osx || return 1
 
 # Recent Homebrew versions have built-in cask, so no installs needed.
 # Exit if, for some reason, cask is not installed.
-[[ ! "$(brew ls --versions brew-cask)" ]] && e_error "Brew-cask failed to install." && return 1
+[[ ! "$(brew cask list)" ]] && e_error "Brew-cask failed to install." && return 1
 
 # Hack to show the first-run brew-cask password prompt immediately.
 brew cask info this-is-somewhat-annoying 2>/dev/null
