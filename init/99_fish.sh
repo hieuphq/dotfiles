@@ -2,8 +2,6 @@
 is_ubuntu && sudo apt-get install fish
 
 # install gh
-mkdir -p $DOTFILES/link/.config/fish/functions
-mkdir -p $DOTFILES/link/.config/fish/completions
 for v in "gh" "gl" "bb"
 do
   ln -sf $DOTFILES/vendor/gh/functions/$v.fish $DOTFILES/link/.config/fish/functions/$v.fish
