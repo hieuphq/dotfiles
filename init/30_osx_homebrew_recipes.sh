@@ -13,6 +13,7 @@ recipes=(
   fish
   git
   git-extras
+  glide
   go
   htop-osx
   hub
