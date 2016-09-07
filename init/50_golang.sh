@@ -12,8 +12,6 @@ is_ubuntu && {
   # Download Golang
   echo "Install Go $GO_VERSION.$OS-$ARCH -- $GO_URL"
   sudo bash -c "curl -s $GO_URL | tar -C /usr/local -xz"
-
-  export GOROOT=/usr/local/go
 }
 
 # loads Golang environment
