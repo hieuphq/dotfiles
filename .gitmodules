@@ -4,3 +4,6 @@
 [submodule "z"]
 	path = vendor/z
 	url = git://github.com/rupa/z.git
+[submodule "gh"]
+	path = vendor/gh
+	url = git://github.com/dickeyxxx/gh.git
