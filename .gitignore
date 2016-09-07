@@ -7,6 +7,12 @@
 /link/.ssh/id_*
 /link/.ssh/*.pem
 /link/.ssh/known_hosts
+/link/.config/fish/fishd.*
+/link/.config/fish/fish_history
+
+# unnecessary stuff
+/link/.config/dconf
+/link/.config/google-chrome
 
 # Don't commit Vim plugins, vim-plug will install them.
 /link/.vim/plugged
