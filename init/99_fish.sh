@@ -8,6 +8,9 @@ do
 done
 ln -sf $DOTFILES/vendor/gh/completions/gh.fish $DOTFILES/link/.config/fish/completions/gh.fish
 
+# make fish a "valid" shell
+sudo sh -c "echo $(which fish) >> /etc/shells"
+
 # install https://github.com/oh-my-fish/oh-my-fish
 command -v fish >/dev/null 2>&1 && {
   sh -c "curl -L http://get.oh-my.fish | fish"
