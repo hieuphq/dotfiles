@@ -4,9 +4,9 @@ is_ubuntu && sudo apt-get install fish
 # install gh
 for v in "gh" "gl" "bb"
 do
-  ln -sf $DOTFILES/vendor/gh/functions/$v.fish $DOTFILES/link/.config/fish/functions/$v.fish
+  ln -sf ../../../../vendor/gh/functions/$v.fish $DOTFILES/link/.config/fish/functions/$v.fish
 done
-ln -sf $DOTFILES/vendor/gh/completions/gh.fish $DOTFILES/link/.config/fish/completions/gh.fish
+ln -sf ../../../../vendor/gh/completions/gh.fish $DOTFILES/link/.config/fish/completions/gh.fish
 
 # make fish a "valid" shell
 sudo sh -c "echo $(which fish) >> /etc/shells"

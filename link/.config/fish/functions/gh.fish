@@ -1,1 +1,1 @@
-/Users/huygiang/.dotfiles/vendor/gh/functions/gh.fish
+../../../../vendor/gh/functions/gh.fish
