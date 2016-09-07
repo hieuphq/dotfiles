@@ -17,6 +17,7 @@ casks=(
   a-better-finder-rename
   atom
   charles
+  docker
   dropbox
   # fastscripts
   firefox
