@@ -1,0 +1,1 @@
+/Users/huygiang/.dotfiles/vendor/gh/completions/gh.fish
