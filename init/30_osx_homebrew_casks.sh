@@ -26,6 +26,7 @@ casks=(
   # fastscripts
   firefox
   google-chrome
+  gpgtools
   # gyazo
   hex-fiend
   iterm2
