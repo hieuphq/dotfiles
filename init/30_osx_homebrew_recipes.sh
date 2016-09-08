@@ -28,6 +28,7 @@ recipes=(
   terminal-notifier
   the_silver_searcher
   tree
+  vim
   wget
 )
 
