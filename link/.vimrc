@@ -1,5 +1,3 @@
-set shell=/bin/bash
-
 " Change mapleader
 let mapleader=","
 
