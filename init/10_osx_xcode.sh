@@ -7,3 +7,6 @@ is_osx || return 1
 if [[ ! -d "$('xcode-select' -print-path 2>/dev/null)" ]]; then
   sudo xcode-select -switch /usr/bin
 fi
+
+# Disable trackpad pinch-to-zoom
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadPinch -bool false
