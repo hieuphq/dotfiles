@@ -19,6 +19,7 @@ casks=(
   charles
   docker
   dropbox
+  exa
   # fastscripts
   firefox
   google-chrome
