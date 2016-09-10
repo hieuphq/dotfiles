@@ -1,7 +1,14 @@
 set fish_complete_path /usr/local/share/fish/completions $fish_complete_path
 
-alias ll "ls -lhF"
+# exa is a replacement for ls: https://the.exa.website/
+if type exa > /dev/null
+  alias ls "exa"
+  alias ll "exa --long --git"
+  alias lt "exa --long --tree"
+  alias grep "grep --color=auto"
+end
 
+set -x EDITOR vim
 set -x DOTFILES $HOME/.dotfiles
 set -x GOPATH $HOME
 
