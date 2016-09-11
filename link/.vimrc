@@ -239,6 +239,11 @@ let g:indent_guides_guide_size = 1
 " Mustache/handlebars
 let g:mustache_abbreviations = 1
 
+" File type icons
+" https://github.com/ryanoasis/vim-devicons
+set encoding=utf8
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h13
+
 " https://github.com/junegunn/vim-plug
 " Reload .vimrc and :PlugInstall to install plugins.
 call plug#begin('~/.vim/plugged')
@@ -265,4 +270,12 @@ Plug 'wavded/vim-stylus'
 Plug 'klen/python-mode', {'for': 'python'}
 Plug 'terryma/vim-multiple-cursors'
 Plug 'wting/rust.vim', {'for': 'rust'}
+Plug 'flazz/vim-colorschemes'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
+
+" Solaried color scheme
+" https://github.com/altercation/vim-colors-solarized
+syntax enable
+set background=dark
+colorscheme solarized
