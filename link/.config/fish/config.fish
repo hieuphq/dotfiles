@@ -15,12 +15,12 @@ set -x GOPATH $HOME
 set PATH /usr/local/opt/go/libexec/bin $HOME/bin /usr/local/bin $PATH
 
 # omf bobthefish theme
+set -g theme_nerd_fonts yes
 set -g theme_title_display_process yes
 set -g theme_show_exit_status yes
 set -g theme_display_date yes
 set -g theme_date_format "+%H:%M:%S"
 set -g theme_avoid_ambiguous_glyphs yes
-set -g theme_powerline_fonts yes
 
 # bobthefish custom color scheme
 # Based on "solarized", but "color_repo" are based on "zenburn".
