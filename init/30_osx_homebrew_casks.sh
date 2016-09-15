@@ -16,7 +16,6 @@ casks=(
   # Applications
   a-better-finder-rename
   atom
-  charles
   docker
   dropbox
   exa
