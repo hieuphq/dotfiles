@@ -23,7 +23,7 @@ set -g theme_date_format "+%H:%M:%S"
 set -g theme_avoid_ambiguous_glyphs yes
 
 # bobthefish custom color scheme
-# Based on "solarized", but "color_repo" are based on "zenburn".
+# Based on "solarized", but "color_repo" based on "terminal-dark".
 set -g theme_color_scheme user
 
 # "solarized" theme
