@@ -13,5 +13,5 @@ sudo sh -c "echo $(which fish) >> /etc/shells"
 
 # install https://github.com/oh-my-fish/oh-my-fish
 command -v fish >/dev/null 2>&1 && {
-  sh -c "curl -L http://get.oh-my.fish | fish"
+  $DOTFILES/vendor/oh-my-fish/bin/install --offline=$DOTFILES/vendor/oh-my-fish
 }
