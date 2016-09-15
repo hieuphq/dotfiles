@@ -18,6 +18,7 @@ set PATH /usr/local/opt/go/libexec/bin $HOME/bin /usr/local/bin $PATH
 set -g theme_nerd_fonts yes
 set -g theme_title_display_process yes
 set -g theme_show_exit_status yes
+set -g theme_display_vagrant yes
 set -g theme_display_date yes
 set -g theme_date_format "+%H:%M:%S"
 set -g theme_avoid_ambiguous_glyphs yes
