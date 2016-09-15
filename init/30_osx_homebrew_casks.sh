@@ -22,6 +22,7 @@ casks=(
   # fastscripts
   firefox
   google-chrome
+  gotiengviet
   gpgtools
   # gyazo
   hex-fiend
