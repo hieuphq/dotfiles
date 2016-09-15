@@ -21,6 +21,7 @@ casks=(
   exa
   # fastscripts
   firefox
+  flux
   google-chrome
   gotiengviet
   gpgtools
