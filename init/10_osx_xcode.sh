@@ -10,3 +10,8 @@ fi
 
 # Disable trackpad pinch-to-zoom
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadPinch -bool false
+
+# Enable 3-finger drag
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
