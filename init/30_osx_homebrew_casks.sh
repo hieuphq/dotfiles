@@ -29,6 +29,7 @@ casks=(
   hex-fiend
   iterm2
   macvim
+  messenger
   skype
   slack
   sourcetree
