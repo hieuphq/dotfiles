@@ -7,3 +7,6 @@
 [submodule "gh"]
 	path = vendor/gh
 	url = git://github.com/dickeyxxx/gh.git
+[submodule "oh-my-fish"]
+	path = vendor/oh-my-fish
+	url = https://github.com/oh-my-fish/oh-my-fish
