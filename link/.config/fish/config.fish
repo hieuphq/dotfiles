@@ -65,20 +65,13 @@ set __color_username                 $base02 $blue
 set __color_rvm                      $red $colorfg --bold
 set __color_virtualfish              $cyan $colorfg --bold
 
-# "zenburn" theme
+# "terminal-dark" theme
 # "color_repo" only
-set -l zenburn_grey   333333 # a bit darker than normal zenburn grey
-set -l zenburn_red    CC9393
-set -l zenburn_green  7F9F7F
-set -l zenburn_yellow E3CEAB
-set -l zenburn_orange DFAF8F
-set -l zenburn_blue   8CD0D3
-set -l zenburn_white  DCDCCC
-
-set __color_repo                     $zenburn_green $zenburn_grey
-set __color_repo_work_tree           $zenburn_green $zenburn_grey --bold
-set __color_repo_dirty               $zenburn_red $zenburn_grey
-set __color_repo_staged              $zenburn_yellow $zenburn_grey
+set colorfg black
+set __color_repo                     green $colorfg
+set __color_repo_work_tree           green $colorfg --bold
+set __color_repo_dirty               brred $colorfg
+set __color_repo_staged              yellow $colorfg
 
 # iterm2 stuff
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
