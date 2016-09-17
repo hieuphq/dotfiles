@@ -4,3 +4,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # virtualenv
 alias sv="source venv/bin/activate"
+
+# show listening ports
+alias tcplisten="sudo lsof -iTCP -sTCP:LISTEN -n -P"

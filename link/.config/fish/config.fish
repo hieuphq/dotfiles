@@ -1,5 +1,8 @@
 set fish_complete_path /usr/local/share/fish/completions $fish_complete_path
 
+# show listening ports
+alias tcplisten "sudo lsof -iTCP -sTCP:LISTEN -n -P"
+
 # exa is a replacement for ls: https://the.exa.website/
 if type exa > /dev/null
   alias ls "exa"
