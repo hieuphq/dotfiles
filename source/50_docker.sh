@@ -12,7 +12,7 @@
 # alias dk-c="docker-compose"
 
 # docker-machine env
-eval $(docker-machine env dev) 2>&1 /dev/null
+eval "$(docker-machine env dev)"
 
 # http://stackoverflow.com/questions/32723111/how-to-remove-old-and-unused-docker-images
 dcleanup() {
