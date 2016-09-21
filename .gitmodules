@@ -9,4 +9,7 @@
 	url = git://github.com/dickeyxxx/gh.git
 [submodule "oh-my-fish"]
 	path = vendor/oh-my-fish
-	url = https://github.com/oh-my-fish/oh-my-fish
+	url = https://github.com/oh-my-fish/oh-my-fish.git
+[submodule "zsh-syntax-highlighting"]
+	path = vendor/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
