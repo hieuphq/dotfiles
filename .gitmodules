@@ -6,16 +6,16 @@
 	url = git://github.com/rupa/z.git
 [submodule "oh-my-fish"]
 	path = vendor/oh-my-fish
-	url = https://github.com/oh-my-fish/oh-my-fish.git
+	url = git://github.com/oh-my-fish/oh-my-fish.git
 [submodule "zsh-syntax-highlighting"]
 	path = vendor/zsh-syntax-highlighting
-	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "gh"]
 	path = vendor/gh
-	url = https://github.com/gnhuy91/gh.git
+	url = git://github.com/gnhuy91/gh.git
 [submodule "oh-my-zsh"]
 	path = vendor/oh-my-zsh
-	url = https://github.com/robbyrussell/oh-my-zsh.git
+	url = git://github.com/robbyrussell/oh-my-zsh.git
 [submodule "vendor/zsh-custom"]
 	path = vendor/zsh-custom
-	url = https://github.com/gnhuy91/zsh-custom.git
+	url = git://github.com/gnhuy91/zsh-custom.git
