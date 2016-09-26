@@ -16,6 +16,3 @@
 [submodule "oh-my-zsh"]
 	path = vendor/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule "vendor/zsh-custom"]
-	path = vendor/zsh-custom
-	url = https://github.com/gnhuy91/zsh-custom.git
