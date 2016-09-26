@@ -51,23 +51,15 @@ DEFAULT_USER=$USER
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=$DOTFILES/vendor/zsh-custom
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx thefuck z golang zsh-autosuggestions)
+plugins=(git osx thefuck z golang zsh-autosuggestions shrink-path)
 
 source $ZSH/oh-my-zsh.sh
-
-# zsh-autosuggestions
-if [[ ! -d $ZSH_CUSTOM/plugins/zsh-autosuggestions ]]; then
-  git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-  echo "--------------------------------------------------------------"
-  echo "| Please open a new terminal session for ZSH auto-suggestion |"
-  echo "--------------------------------------------------------------"
-fi
 
 # User configuration
 
