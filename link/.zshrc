@@ -1,6 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# ALT + arrow keys to move between words
+bindkey "^[^[[C" forward-word
+bindkey "^[^[[D" backward-word
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/huygn/.oh-my-zsh
 
@@ -52,11 +56,13 @@ DEFAULT_USER="huygn"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx)
+plugins=(git osx zsh-autosuggestions shrink-path)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=10"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
