@@ -13,3 +13,6 @@
 [submodule "gh"]
 	path = vendor/gh
 	url = https://github.com/gnhuy91/gh.git
+[submodule "oh-my-zsh"]
+	path = vendor/oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
