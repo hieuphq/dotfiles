@@ -57,9 +57,17 @@ DEFAULT_USER=$USER
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx zsh-autosuggestions)
+plugins=(git osx thefuck z zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+
+# zsh-autosuggestions
+if [[ ! -d $ZSH_CUSTOM/plugins/zsh-autosuggestions ]]; then
+  git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+  echo "--------------------------------------------------------------"
+  echo "| Please open a new terminal session for ZSH auto-suggestion |"
+  echo "--------------------------------------------------------------"
+fi
 
 # User configuration
 
@@ -91,8 +99,6 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-eval "$(thefuck --alias)"
 
 # iterm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
