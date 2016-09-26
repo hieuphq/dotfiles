@@ -12,7 +12,7 @@ export ZSH=/Users/huygn/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
-DEFAULT_USER="huygn"
+DEFAULT_USER=$USER
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -56,7 +56,7 @@ DEFAULT_USER="huygn"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx zsh-autosuggestions shrink-path)
+plugins=(git osx zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -91,6 +91,8 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+eval "$(thefuck --alias)"
+
 # iterm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
@@ -99,6 +101,7 @@ autoload bashcompinit
 bashcompinit
 source $HOME/.bashrc
 
+# Keep these lines at the bottom of zshrc
 ZSH_HIGHLIGHT_DIR=$DOTFILES/vendor/zsh-syntax-highlighting
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=$ZSH_HIGHLIGHT_DIR/highlighters
 source $ZSH_HIGHLIGHT_DIR/zsh-syntax-highlighting.zsh
