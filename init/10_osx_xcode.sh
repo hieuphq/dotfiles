@@ -15,3 +15,7 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadPinch 
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
+
+# Force Finder shows hidden files
+defaults write com.apple.finder AppleShowAllFiles TRUE
+killall Finder
