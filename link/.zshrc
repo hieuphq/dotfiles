@@ -6,7 +6,8 @@ bindkey "^[^[[C" forward-word
 bindkey "^[^[[D" backward-word
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/huygn/.oh-my-zsh
+export DOTFILES=$HOME/.dotfiles
+export ZSH=$DOTFILES/vendor/oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
