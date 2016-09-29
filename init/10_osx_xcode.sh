@@ -19,3 +19,7 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGe
 # Force Finder shows hidden files
 defaults write com.apple.finder AppleShowAllFiles TRUE
 killall Finder
+
+# Disable the Character Accent Menu
+# http://osxdaily.com/2011/08/04/enable-key-repeat-mac-os-x-lion
+defaults write -g ApplePressAndHoldEnabled -bool false
