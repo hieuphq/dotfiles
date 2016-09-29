@@ -1,3 +1,6 @@
+" Allow copy from vim to clipboard
+set clipboard=unnamed
+
 " Change mapleader
 let mapleader=","
 
@@ -230,6 +233,10 @@ autocmd vimrc VimEnter *
   \   NERDTree |
   \ end
 
+" Quit NERDTree when no active buffer
+" https://github.com/scrooloose/nerdtree/issues/21#issuecomment-3348390
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
 " Signify
 let g:signify_vcs_list = ['git', 'hg', 'svn']
 
@@ -267,6 +274,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'fatih/vim-go', {'for': 'go'}
+Plug 'SirVer/ultisnips'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'pangloss/vim-javascript', {'for': 'javascript'}
 Plug 'mhinz/vim-signify'
