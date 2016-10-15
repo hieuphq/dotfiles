@@ -4,6 +4,10 @@ is_osx || return 1
 # Exit if Homebrew is not installed.
 [[ ! "$(type -P brew)" ]] && e_error "Brew casks need Homebrew to install." && return 1
 
+# Ensure the cask kegs are installed.
+kegs=(caskroom/fonts)
+brew_tap_kegs
+
 # Recent Homebrew versions have built-in cask, so no installs needed.
 # Exit if, for some reason, cask is not installed.
 [[ ! "$(brew cask list)" ]] && e_error "Brew-cask failed to install." && return 1
@@ -52,6 +56,10 @@ casks=(
   # Color pickers
   colorpicker-developer
   colorpicker-skalacolor
+  # Fonts
+  font-source-code-pro
+  font-meslo-lg-for-powerline
+  font-roboto-mono-for-powerline
 )
 
 # Install Homebrew casks.
