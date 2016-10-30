@@ -10,9 +10,6 @@
 [submodule "zsh-syntax-highlighting"]
 	path = vendor/zsh-syntax-highlighting
 	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
-[submodule "gh"]
-	path = vendor/gh
-	url = git://github.com/gnhuy91/gh.git
 [submodule "oh-my-zsh"]
 	path = vendor/oh-my-zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
