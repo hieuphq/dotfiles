@@ -11,6 +11,7 @@ recipes=(
   bash
   cowsay
   fish
+  fzf
   git
   git-extras
   glide
