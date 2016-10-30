@@ -16,6 +16,3 @@
 [submodule "zsh-custom"]
 	path = vendor/zsh-custom
 	url = git://github.com/gnhuy91/zsh-custom.git
-[submodule "gh"]
-	path = vendor/gh
-	url = https://github.com/gnhuy91/gh.git
