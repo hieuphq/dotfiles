@@ -237,6 +237,15 @@ autocmd vimrc VimEnter *
 " https://github.com/scrooloose/nerdtree/issues/21#issuecomment-3348390
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+" Javascript
+let g:javascript_plugin_jsdoc = 1
+
+" JSON
+let g:vim_json_syntax_conceal = 0
+
+" JSX
+let g:jsx_ext_required = 0
+
 " Signify
 let g:signify_vcs_list = ['git', 'hg', 'svn']
 
@@ -278,6 +287,10 @@ Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'SirVer/ultisnips'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'pangloss/vim-javascript', {'for': 'javascript'}
+Plug 'elzr/vim-json'
+Plug 'mxw/vim-jsx'
+Plug 'moll/vim-node'
+Plug 'ternjs/tern_for_vim'
 Plug 'mhinz/vim-signify'
 Plug 'mattn/emmet-vim'
 Plug 'mustache/vim-mustache-handlebars'
@@ -289,7 +302,6 @@ Plug 'wting/rust.vim', {'for': 'rust'}
 Plug 'flazz/vim-colorschemes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'colepeters/spacemacs-theme.vim'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 call plug#end()
 
 " Solaried color scheme
@@ -297,3 +309,10 @@ call plug#end()
 syntax enable
 set background=dark
 colorscheme solarized
+
+" Spacemacs theme
+if (has("termguicolors"))
+  set termguicolors
+endif
+set background=dark
+colorscheme spacemacs-theme
