@@ -58,6 +58,7 @@ casks=(
   colorpicker-skalacolor
   # Fonts
   font-source-code-pro
+  font-source-sans-pro
   font-meslo-lg-for-powerline
   font-roboto-mono-for-powerline
 )

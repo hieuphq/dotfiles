@@ -21,6 +21,7 @@ recipes=(
   id3tool
   jq
   lesspipe
+  m-cli
   man2html
   mercurial
   nmap
@@ -30,7 +31,10 @@ recipes=(
   the_silver_searcher
   tree
   vim
+  watchman
   wget
+  zsh
+  zsh-syntax-highlighting
 )
 
 brew_install_recipes
