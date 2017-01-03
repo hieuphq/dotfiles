@@ -14,6 +14,9 @@
 /link/.config/dconf
 /link/.config/google-chrome
 
+# just ignore everthing in link/.config
+/link/.config
+
 # Don't commit Vim plugins, vim-plug will install them.
 /link/.vim/plugged
 
