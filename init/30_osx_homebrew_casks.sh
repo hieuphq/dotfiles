@@ -57,6 +57,8 @@ casks=(
   colorpicker-developer
   colorpicker-skalacolor
   # Fonts
+  font-fira-code
+  font-hasklig
   font-source-code-pro
   font-source-sans-pro
   font-meslo-lg-for-powerline
