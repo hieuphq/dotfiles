@@ -23,14 +23,13 @@ casks=(
   docker
   dropbox
   exa
-  # fastscripts
   firefox
   flux
   google-chrome
   gotiengviet
   gpgtools
-  # gyazo
   hex-fiend
+  hyper
   iterm2
   macvim
   messenger

@@ -12,7 +12,7 @@ export ZSH=$DOTFILES/vendor/oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME=""
 DEFAULT_USER=$USER
 
 # Uncomment the following line to use case-sensitive completion.
@@ -99,6 +99,10 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 autoload bashcompinit
 bashcompinit
 source $HOME/.bashrc
+
+# Choose "pure" as prompt theme
+autoload -U promptinit; promptinit
+prompt pure
 
 # Keep these lines at the bottom of zshrc
 ZSH_HIGHLIGHT_DIR=$DOTFILES/vendor/zsh-syntax-highlighting
