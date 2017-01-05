@@ -62,7 +62,3 @@ Desktop.ini
 .swo
 .*.swp
 .*.swo
-
-# VSCode
-.vscode/
-jsconfig.json
