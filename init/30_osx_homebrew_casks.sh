@@ -18,21 +18,28 @@ brew cask info this-is-somewhat-annoying 2>/dev/null
 # Homebrew casks
 casks=(
   # Applications
+  1password
   a-better-finder-rename
   atom
+  coconutbattery
   docker
-  dropbox
   exa
   firefox
   flux
+  franz
   google-chrome
+  google-drive
   gotiengviet
   gpgtools
   hex-fiend
   hyper
+  insomniax
   iterm2
+  jumpshare
+  laverna
   macvim
   messenger
+  ngrok
   skype
   slack
   sourcetree
@@ -41,6 +48,7 @@ casks=(
   virtualbox
   visual-studio-code
   vlc
+  unrarx
   # Quick Look plugins
   betterzipql
   qlcolorcode
@@ -56,11 +64,12 @@ casks=(
   colorpicker-developer
   colorpicker-skalacolor
   # Fonts
+  font-go-mono
   font-fira-code
   font-hasklig
+  font-meslo-lg-for-powerline
   font-source-code-pro
   font-source-sans-pro
-  font-meslo-lg-for-powerline
   font-roboto-mono-for-powerline
 )
 

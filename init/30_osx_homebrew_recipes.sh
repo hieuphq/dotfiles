@@ -16,6 +16,7 @@ recipes=(
   git-extras
   glide
   go
+  heroku
   htop-osx
   hub
   id3tool
@@ -24,16 +25,19 @@ recipes=(
   m-cli
   man2html
   mercurial
+  ncdu
   nmap
   node@6
   sl
   ssh-copy-id
   terminal-notifier
   the_silver_searcher
+  thefuck
   tree
   vim
   watchman
   wget
+  yarn
   zsh
   zsh-syntax-highlighting
 )

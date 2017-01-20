@@ -2,8 +2,10 @@
 which node || return 1
 
 packages=(
-  svgo
+  eslint
+  flow-bin
   pure-prompt
+  svgo
 )
 
 function node_install_packages() {
