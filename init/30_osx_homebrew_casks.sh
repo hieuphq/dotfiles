@@ -40,6 +40,7 @@ casks=(
   macvim
   messenger
   ngrok
+  polymail
   skype
   slack
   sourcetree
