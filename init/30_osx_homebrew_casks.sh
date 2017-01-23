@@ -65,13 +65,14 @@ casks=(
   colorpicker-developer
   colorpicker-skalacolor
   # Fonts
-  font-go-mono
   font-fira-code
+  font-firacode-nerd-font
+  font-go-mono
   font-hasklig
-  font-meslo-lg-for-powerline
+  font-hasklig-nerd-font
+  font-meslo-nerd-font
   font-source-code-pro
   font-source-sans-pro
-  font-roboto-mono-for-powerline
 )
 
 # Install Homebrew casks.
