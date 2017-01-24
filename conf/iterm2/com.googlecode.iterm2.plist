@@ -1633,9 +1633,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>735 118 636 263 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>439 335 796 473 0 0 1440 877 </string>
+	<string>366 232 937 465 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 68 1438 809 0 0 1440 877 </string>
+	<string>0 64 1434 813 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2254,7 +2254,7 @@
 			<key>Thin Strokes</key>
 			<integer>2</integer>
 			<key>Transparency</key>
-			<real>0.0</real>
+			<real>0.061096985946745556</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -2279,6 +2279,10 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>BA1FE877-8456-42D8-A020-3A453B423DD9</string>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>506877622.90231597</real>
 	<key>PMPrintingExpandedStateForPrint2</key>
@@ -2337,7 +2341,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>SmartPlacement</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
