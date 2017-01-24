@@ -16,3 +16,6 @@ function node_install_packages() {
 }
 
 node_install_packages
+
+# add yarn binary folder to PATH
+export PATH=$PATH:$(yarn global bin)
