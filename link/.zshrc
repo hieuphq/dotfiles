@@ -95,14 +95,14 @@ export LANG=en_US.UTF-8
 # iterm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# Choose "pure" as prompt theme
+autoload -U promptinit; promptinit
+prompt pure
+
 # Sourcing bashrc
 autoload bashcompinit
 bashcompinit
 source $HOME/.bashrc
-
-# Choose "pure" as prompt theme
-autoload -U promptinit; promptinit
-prompt pure
 
 # Keep these lines at the bottom of zshrc
 ZSH_HIGHLIGHT_DIR=$DOTFILES/vendor/zsh-syntax-highlighting
