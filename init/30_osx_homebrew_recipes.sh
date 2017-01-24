@@ -9,6 +9,7 @@ recipes=(
   android-platform-tools
   ansible
   bash
+  cmake
   cowsay
   fish
   fzf
@@ -27,7 +28,8 @@ recipes=(
   mercurial
   ncdu
   nmap
-  node@6
+  node
+  rust
   sl
   ssh-copy-id
   terminal-notifier

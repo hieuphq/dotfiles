@@ -23,7 +23,6 @@ casks=(
   atom
   coconutbattery
   docker
-  exa
   firefox
   flux
   franz
