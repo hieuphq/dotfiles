@@ -23,3 +23,7 @@ killall Finder
 # Disable the Character Accent Menu
 # http://osxdaily.com/2011/08/04/enable-key-repeat-mac-os-x-lion
 defaults write -g ApplePressAndHoldEnabled -bool false
+
+# Show "Recent Applications" shorcut in Dock
+defaults write com.apple.dock persistent-others -array-add '{ "tile-data" = { "list-type" = 1; }; "tile-type" = "recents-tile"; }'
+killall Dock
