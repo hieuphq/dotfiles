@@ -18,40 +18,42 @@ brew cask info this-is-somewhat-annoying 2>/dev/null
 # Homebrew casks
 casks=(
   # Applications
-  1password
+  # 1password
   a-better-finder-rename
-  atom
+  # atom
   coconutbattery
   docker
-  firefox
-  flux
+  moom
+  spotify
+  # firefox
+  # flux
   franz
   google-chrome
   google-drive
-  gotiengviet
-  gpgtools
-  hex-fiend
-  hyper
+  # gotiengviet
+  # gpgtools
+  # hex-fiend
+  # hyper
   insomniax
   iterm2
   jumpshare
   laverna
-  macvim
+  # macvim
   messenger
   ngrok
   polymail
   skype
   slack
-  sourcetree
+  # sourcetree
   teamviewer
-  vagrant
-  virtualbox
+  # vagrant
+  # virtualbox
   visual-studio-code
-  vlc
+  # vlc
   unrarx
   # Quick Look plugins
   betterzipql
-  qlcolorcode
+  # qlcolorcode
   qlmarkdown
   qlprettypatch
   qlstephen

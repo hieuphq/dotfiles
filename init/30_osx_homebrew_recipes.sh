@@ -6,12 +6,12 @@ is_osx || return 1
 
 # Homebrew recipes
 recipes=(
-  android-platform-tools
-  ansible
+  # android-platform-tools
+  # ansible
   bash
   cmake
-  cowsay
-  fish
+  # cowsay
+  # fish
   fzf
   git
   git-extras
@@ -22,9 +22,9 @@ recipes=(
   hub
   id3tool
   jq
-  lesspipe
-  m-cli
-  man2html
+  # lesspipe
+  # m-cli
+  # man2html
   mercurial
   ncdu
   nmap
@@ -39,9 +39,9 @@ recipes=(
   vim
   watchman
   wget
-  yarn
+  # yarn
   zsh
-  zsh-syntax-highlighting
+  # zsh-syntax-highlighting
 )
 
 brew_install_recipes
